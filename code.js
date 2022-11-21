@@ -82,7 +82,7 @@ function checkSpot(x,y)//button lables will need to be "x.y"
   if(holdingFlag)//marking things a flags
   {
     setProperty("flagBttn","background-color","#b3b3b3");
-      if(getProperty(x+"."+y,"image")=="icon://fa-flag")//if you want to remove flags
+      if(getProperty(x+"."+y,"image")=="assets/red-flag.png")//if you want to remove flags
         {
           setProperty(x+"."+y,"image","");
           if(getText(x+"."+y)==="")
@@ -92,14 +92,14 @@ function checkSpot(x,y)//button lables will need to be "x.y"
         }
       else
         {
-          setProperty(x+"."+y,"image","icon://fa-flag");
+          setProperty(x+"."+y,"image","assets/red-flag.png");
           setProperty(x+"."+y,"background-color","red");
         }
     holdingFlag=false;
     return;
   }//end if(holdingFlag)  
   
-  if(getProperty(x+"."+y,"image")=="icon://fa-flag")//if its got a flag on it, dont let them click on it
+  if(getProperty(x+"."+y,"image")=="assets/red-flag.png")//if its got a flag on it, dont let them click on it
     return;
 
   if(board[x][y]||block)//kill them if there is a bomb
@@ -137,7 +137,7 @@ function winGame(win)
     for(var i =0;i<board.length;i++)  
       for(var j = 0; j<board[i].length;j++)
         if(board[i][j])
-          setProperty(i+"."+j,"image","http://iconshow.me/media/images/ui/Streamline-Icon/png/256/21-bomb-bug.png");
+          setProperty(i+"."+j,"image","assets/bomb.png");
 
   block=true;//dont let you click on new squares
   if(win)

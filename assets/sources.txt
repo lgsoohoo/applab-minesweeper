@@ -1,0 +1,22 @@
+https://www.flaticon.com/free-icon/dead_158400
+https://www.flaticon.com/free-icon/amazed_158435
+https://www.flaticon.com/free-icon/happiness_158420
+https://www.flaticon.com/free-icon/sunglasses_158417
+https://www.flaticon.com/free-icon/red-flag_2814368
+https://www.flaticon.com/free-icon/bomb_112683
+https://www.flaticon.com/free-icon/explosion_2147233
+
+
+
+Icons are created by "Freepik - Flaticon", except the explosion icon, which is created by "Aldo Cervantes - Flaticon"
+
+
+
+
+<a href="https://www.flaticon.com/free-icons/dead" title="dead icons">Dead icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/amazed" title="amazed icons">Amazed icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/emoji" title="emoji icons">Emoji icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/sunglasses" title="sunglasses icons">Sunglasses icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/flags" title="flags icons">Flags icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/bomb" title="bomb icons">Bomb icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/explosion" title="explosion icons">Explosion icons created by Aldo Cervantes - Flaticon</a>
