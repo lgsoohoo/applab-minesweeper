@@ -1,8 +1,10 @@
-# README for Complete:Minesweeper! #
+# README for "AppLab Minesweeper"
 
-This is the README file for the Complete:Minesweeper! app. It's a great place to write
+This project was originally created in 2017 [through Code.org's AppLab](https://studio.code.org/projects/applab/tlVlCyyQD-5K-N73aIa8oapXN9ZWgRpvqdrevAN8h2Y). It has been exported from Code.org so that the project can live on if/when Code.org shuts down or removes old projects.
+
+*This is the README file for the "AppLab Minesweeper" app. It's a great place to write
 down some notes about how your app works. For starters, here is some information
-about the other files in this folder.
+about the other files in this folder.*
 
 The files in this folder contain everything you need to run your app:
 
