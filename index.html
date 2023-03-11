@@ -1,22 +1,28 @@
 <html>
-  <head>
-    <title>Minesweeper</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="applab/fontawesome-webfont.woff2" as="font">
-    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <script>
-      function setExportConfig(config) { window.EXPORT_OPTIONS = config; }
-    </script>
-    <script src="https://studio.code.org/projects/applab/tlVlCyyQD-5K-N73aIa8oapXN9ZWgRpvqdrevAN8h2Y/export_config?script_call=setExportConfig"></script>
-    <script src="applab/applab-api.js"></script>
-    <script src="https://www.google.com/jsapi"></script>
-    <link rel="stylesheet" href="applab/applab.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+
+<head>
+  <title>Minesweeper</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="applab/fontawesome-webfont.woff2" as="font">
+  <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script>
+    function setExportConfig(config) { window.EXPORT_OPTIONS = config; }
+  </script>
+  <script src="https://studio.code.org/projects/applab/tlVlCyyQD-5K-N73aIa8oapXN9ZWgRpvqdrevAN8h2Y/export_config?script_call=setExportConfig"></script>
+  <script src="applab/applab-api.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+  <link rel="stylesheet" href="applab/applab.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="d-flex-h-centered">
     <div id="divApplab" class="appModern running" tabindex="1" style="width: 320px; height: 450px; display: block;">
-      <div class="screen" tabindex="1" style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 255, 255);" id="field" data-theme="classic">
+      <div class="screen" tabindex="1"
+        style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgb(255, 255, 255);"
+        id="field" data-theme="classic">
         <button id="0.0" class="minesweeper-cell" style="left: 30px; top: 115px;"></button>
         <button id="0.1" class="minesweeper-cell" style="left: 60px; top: 115px;"></button>
         <button id="0.2" class="minesweeper-cell" style="left: 90px; top: 115px;"></button>
@@ -98,123 +104,100 @@
         <button id="7.8" class="minesweeper-cell" style="left: 270px; top: 325px;"></button>
         <button id="8.7" class="minesweeper-cell" style="left: 240px; top: 355px;"></button>
         <button id="8.8" class="minesweeper-cell" style="left: 270px; top: 355px;"></button>
-        
-        <!--         
-          <label
-            style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 245px; height: 19px; position: absolute; left: 40px; top: 95px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-            id="grid1"
-            class="design-mode-hidden"
-          >
-            0&nbsp; &nbsp;&nbsp; 1 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 &nbsp; &nbsp; 6 &nbsp; &nbsp; 7 &nbsp; &nbsp; 8
-          </label>
-          <label
-            style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 15px; height: 19px; position: absolute; left: 10px; top: 115px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-            id="grid2"
-            class="design-mode-hidden"
-          >
-            0
-          </label>
-          <label
-            style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 13px; height: 19px; position: absolute; left: 10px; top: 180px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-            id="grid3"
-            class="design-mode-hidden"
-          >
-            2
-          </label>
-          <label
-            style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 14px; height: 19px; position: absolute; left: 10px; top: 240px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-            id="grid4"
-            class="design-mode-hidden"
-          >
-            4
-          </label>
-          <label
-            style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 20px; height: 20px; position: absolute; left: 10px; top: 300px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-            id="grid5"
-            class="design-mode-hidden"
-          >
-            6
-          </label>
-          <label
-            style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 14px; height: 19px; position: absolute; left: 10px; top: 355px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-            id="grid6"
-            class="design-mode-hidden"
-          >
-            8
-          </label>
-          <label
-            style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 143px; height: 19px; position: absolute; left: 90px; top: 37px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-            id="grid0"
-            class="design-mode-hidden"
-          >
-            &lt;-----Y Values-----&gt;
-          </label> 
-        -->
 
-        <button
-          id="flagBttn"
-          data-canonical-image-url="assets/red-flag.png"
-          data-image-type="icon"
-        ></button>
-        <img
-          data-canonical-image-url="assets/happiness.png"
-          id="happyFace"
-          class="faces"
-          src="assets/happiness.png"
-          data-image-type="file"
-        />
-        <img
-          data-canonical-image-url="assets/amazed.png"
-          id="oFace"
-          class="faces design-mode-hidden"
-          src="assets/amazed.png"
-          data-image-type="file"
-        />
-        <img
-          data-canonical-image-url="assets/dead.png"
-          id="deadFace"
-          class="faces design-mode-hidden"
-          src="assets/dead.png"
-          data-image-type="file"
-        />
-        <img
-          data-canonical-image-url="assets/sunglasses.png"
-          id="winFace"
-          class="faces design-mode-hidden"
-          src="assets/sunglasses.png"
-          data-image-type="file"
-        />
-        
+        <!--         
+            <label
+              style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 245px; height: 19px; position: absolute; left: 40px; top: 95px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
+              id="grid1"
+              class="design-mode-hidden"
+            >
+              0&nbsp; &nbsp;&nbsp; 1 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; 3 &nbsp; &nbsp; 4 &nbsp; &nbsp; 5 &nbsp; &nbsp; 6 &nbsp; &nbsp; 7 &nbsp; &nbsp; 8
+            </label>
+            <label
+              style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 15px; height: 19px; position: absolute; left: 10px; top: 115px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
+              id="grid2"
+              class="design-mode-hidden"
+            >
+              0
+            </label>
+            <label
+              style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 13px; height: 19px; position: absolute; left: 10px; top: 180px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
+              id="grid3"
+              class="design-mode-hidden"
+            >
+              2
+            </label>
+            <label
+              style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 14px; height: 19px; position: absolute; left: 10px; top: 240px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
+              id="grid4"
+              class="design-mode-hidden"
+            >
+              4
+            </label>
+            <label
+              style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 20px; height: 20px; position: absolute; left: 10px; top: 300px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
+              id="grid5"
+              class="design-mode-hidden"
+            >
+              6
+            </label>
+            <label
+              style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 14px; height: 19px; position: absolute; left: 10px; top: 355px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
+              id="grid6"
+              class="design-mode-hidden"
+            >
+              8
+            </label>
+            <label
+              style="margin: 0px; padding: 2px; line-height: 1; font-size: 14px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 143px; height: 19px; position: absolute; left: 90px; top: 37px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
+              id="grid0"
+              class="design-mode-hidden"
+            >
+              &lt;-----Y Values-----&gt;
+            </label> 
+          -->
+
+        <button id="flagBttn" data-canonical-image-url="assets/red-flag.png" data-image-type="icon"></button>
+        <img data-canonical-image-url="assets/happiness.png" id="happyFace" class="faces" src="assets/happiness.png"
+          data-image-type="file" />
+        <img data-canonical-image-url="assets/amazed.png" id="oFace" class="faces design-mode-hidden"
+          src="assets/amazed.png" data-image-type="file" />
+        <img data-canonical-image-url="assets/dead.png" id="deadFace" class="faces design-mode-hidden"
+          src="assets/dead.png" data-image-type="file" />
+        <img data-canonical-image-url="assets/sunglasses.png" id="winFace" class="faces design-mode-hidden"
+          src="assets/sunglasses.png" data-image-type="file" />
+
         <label
           style="margin: 0px; padding: 2px; line-height: 1; font-size: 31px; overflow: hidden; overflow-wrap: break-word; color: rgb(255, 0, 0); max-width: 320px; width: 125px; height: 39px; position: absolute; left: 140px; top: 395px; background-color: rgb(60, 60, 60); text-align: center; border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-          id="timer"
-        >
+          id="timer">
           00:00
         </label>
         <label
           style="margin: 0px; padding: 2px; line-height: 1; font-size: 33px; overflow: hidden; overflow-wrap: break-word; color: rgb(51, 51, 51); max-width: 320px; width: 245px; height: 55px; position: absolute; left: 45px; top: 10px; background-color: rgba(0, 0, 0, 0); border-style: solid; border-width: 0px; border-color: rgb(0, 0, 0); border-radius: 0px; font-family: Arial, Helvetica, sans-serif; text-rendering: optimizespeed;"
-          id="title"
-        >
+          id="title">
           Minesweeper!
         </label>
       </div>
     </div>
+  </div>
 
-    <br>
 
-    <p>The original project can be found on <a href='https://studio.code.org/projects/applab/tlVlCyyQD-5K-N73aIa8oapXN9ZWgRpvqdrevAN8h2Y'>Code.org</a>.</p>
+  <p>The original project can be found on <a
+      href='https://studio.code.org/projects/applab/tlVlCyyQD-5K-N73aIa8oapXN9ZWgRpvqdrevAN8h2Y'>Code.org</a>.</p>
 
-    <details>
-      <summary>Icon Credits</summary>
-      <p>Icons are created by <i>Freepik</i> on <i>Flaticon.com</i>.</p>
-      <ul>
-        <li> <a href='https://www.flaticon.com/free-icon/dead_158400'>"Dead" icon</a> </li>
-        <li> <a href='https://www.flaticon.com/free-icon/amazed_158435'>"Amazed" icon</a> </li>
-        <li> <a href='https://www.flaticon.com/free-icon/happiness_158420'>"Happiness" icon</a> </li>
-        <li> <a href='https://www.flaticon.com/free-icon/sunglasses_158417'>"Sunglasses" icon</a> </li>
-        <li> <a href='https://www.flaticon.com/free-icon/red-flag_2814368'>"Flag" icon</a> </li>
-        <li> <a href='https://www.flaticon.com/free-icon/bomb_112683'>"Bomb" icon</a> </li>
-      </ul>
-    </details>    
-  </body>
+  <details>
+    <summary>Icon Credits</summary>
+    <p>Icons are created by <i>Freepik</i> on <i>Flaticon.com</i>.</p>
+    <ul>
+      <li> <a href='https://www.flaticon.com/free-icon/dead_158400'>"Dead" icon</a> </li>
+      <li> <a href='https://www.flaticon.com/free-icon/amazed_158435'>"Amazed" icon</a> </li>
+      <li> <a href='https://www.flaticon.com/free-icon/happiness_158420'>"Happiness" icon</a> </li>
+      <li> <a href='https://www.flaticon.com/free-icon/sunglasses_158417'>"Sunglasses" icon</a> </li>
+      <li> <a href='https://www.flaticon.com/free-icon/red-flag_2814368'>"Flag" icon</a> </li>
+      <li> <a href='https://www.flaticon.com/free-icon/bomb_112683'>"Bomb" icon</a> </li>
+    </ul>
+  </details>
+
+</body>
+
 </html>

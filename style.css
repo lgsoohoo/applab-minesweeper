@@ -1,3 +1,13 @@
+/* Web Page CSS */
+
+.d-flex-h-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+/* Game CSS */
+
 @font-face {
     font-family: "FontAwesome";
     src: url("applab/fontawesome-webfont.woff2") format("woff2");
